@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: QuestionService
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: admin
+    url: jdbc:mysql://localhost:3306/question_ms?createDatabaseIfNotExist=true&useSSL=false
+  jpa:
+    show-sql: true
+    database: mysql
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+
+    hibernate:
+      ddl-auto: update
+
+
